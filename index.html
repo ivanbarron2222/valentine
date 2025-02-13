@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine?</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: pink;
+        padding: 50px;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      .question {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .date {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .yes-btn {
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+      }
+      .no-btn {
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+      }
+      .btn_container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="question">Hi, Cath. Will you be my Valentine? 💖</div>
+      <div class="date">Friday, 14 February 2025</div>
+      <div class="btn_container">
+          <div class="buttons">
+            <button class="yes-btn" onclick="acceptLove()">Yes</button>
+          </div>
+          <div class="buttons1">
+            <button class="no-btn" onclick="growYesButton()">No</button>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      let yesButton = document.querySelector(".yes-btn");
+      let size = 20;
+
+      function growYesButton() {
+        size += 10;
+        yesButton.style.fontSize = size + "px";
+        yesButton.style.padding = size / 2 + "px";
+      }
+
+      function acceptLove() {
+        alert("Yay! Happy Valentine's Day! Cath💕 Do me a favor, please... If this alert message shows, send me a screenshot🙏🥺");
+      }
+    </script>
+  </body>
+</html>
